@@ -44,7 +44,7 @@ export function CyclesContextProvider({
       )
 
       if (storedStateAsJSON !== 'undefined') {
-        return JSON.parse(storedStateAsJSON)
+        return JSON.parse(storedStateAsJSON || '{}')
       }
 
       return initialState
